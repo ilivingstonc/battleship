@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Main</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+        <script src="../JS/app.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- <div class="startContainer">
+            <div class="instructionsContainer">
+                <p class="instructionsText">These are the instructions to the game</p>
+            </div>
+            <div class="startWrapper">
+                <button class="startButton">Start Game</button>
+            </div>
+        </div> -->
+        <div class="mainContainer">
+            <h1 class="menuHeader">Menu Header Placeholder
+            </h1>
+            <div class="gameContainer">
+                <div class="leftDisp">
+                    <div class="topLeftDisp"> LTop
+                    </div>
+                    <div class="midLeftDisp"> LMiddle
+                    </div>
+                    <div class="bottomLeftDisp"> LBottom
+                    </div>
+                </div>
+                <div class="gameDisp">
+                    <div class="playerContainer">
+                        <h2 class="playerGameHeader"> Operations Command Center                          
+                        </h2>
+                        <div class="playerGameScreen">
+                            <!-- spots, labeled p(player), letter(vert), numeral(horiz) -->
+                            
+                            <div id="pA1"></div>
+                            <div id="pA2"></div>
+                            <div id="pA3"></div>
+                            <div id="pA4"></div>
+                            <div id="pA5"></div>
+                            <div id="pA6"></div>
+                            <div id="pA7"></div>
+                            <div id="pA8"></div>
+                            <div id="pA9"></div>
+                            <div id="pA10"></div>
+                            <div id="pA11"></div>
+                            <div id="pA12"></div>
+                            <div id="pA13"></div>
+                            <div id="pA14"></div>
+                            <div id="pA15"></div>
+                            <div id="pA16"></div>
+                            <div id="pA17"></div>
+                            <div id="pA18"></div>
+                            <div id="pA19"></div>
+                            <div id="pA20"></div>
+                    
+                            <div id="pB1"></div>
+                            <div id="pB2"></div>
+                            <div id="pB3"></div>
+                            <div id="pB4"></div>
+                            <div id="pB5"></div>
+                            <div id="pB6"></div>
+                            <div id="pB7"></div>
+                            <div id="pB8"></div>
+                            <div id="pB9"></div>
+                            <div id="pB10"></div>
+                            <div id="pB11"></div>
+                            <div id="pB12"></div>
+                            <div id="pB13"></div>
+                            <div id="pB14"></div>
+                            <div id="pB15"></div>
+                            <div id="pB16"></div>
+                            <div id="pB17"></div>
+                            <div id="pB18"></div>
+                            <div id="pB19"></div>
+                            <div id="pB20"></div>
+
+                            <div id="pC1"></div>
+                            <div id="pC2"></div>
+                            <div id="pC3"></div>
+                            <div id="pC4"></div>
+                            <div id="pC5"></div>
+                            <div id="pC6"></div>
+                            <div id="pC7"></div>
+                            <div id="pC8"></div>
+                            <div id="pC9"></div>
+                            <div id="pC10"></div>
+                            <div id="pC11"></div>
+                            <div id="pC12"></div>
+                            <div id="pC13"></div>
+                            <div id="pC14"></div>
+                            <div id="pC15"></div>
+                            <div id="pC16"></div>
+                            <div id="pC17"></div>
+                            <div id="pC18"></div>
+                            <div id="pC19"></div>
+                            <div id="pC20"></div>
+
+                            <div id="pD1"></div>
+                            <div id="pD2"></div>
+                            <div id="pD3"></div>
+                            <div id="pD4"></div>
+                            <div id="pD5"></div>
+                            <div id="pD6"></div>
+                            <div id="pD7"></div>
+                            <div id="pD8"></div>
+                            <div id="pD9"></div>
+                            <div id="pD10"></div>
+                            <div id="pD11"></div>
+                            <div id="pD12"></div>
+                            <div id="pD13"></div>
+                            <div id="pD14"></div>
+                            <div id="pD15"></div>
+                            <div id="pD16"></div>
+                            <div id="pD17"></div>
+                            <div id="pD18"></div>
+                            <div id="pD19"></div>
+                            <div id="pD20"></div>
+
+                            <div id="pE1"></div>
+                            <div id="pE2"></div>
+                            <div id="pE3"></div>
+                            <div id="pE4"></div>
+                            <div id="pE5"></div>
+                            <div id="pE6"></div>
+                            <div id="pE7"></div>
+                            <div id="pE8"></div>
+                            <div id="pE9"></div>
+                            <div id="pE10"></div>
+                            <div id="pE11"></div>
+                            <div id="pE12"></div>
+                            <div id="pE13"></div>
+                            <div id="pE14"></div>
+                            <div id="pE15"></div>
+                            <div id="pE16"></div>
+                            <div id="pE17"></div>
+                            <div id="pE18"></div>
+                            <div id="pE19"></div>
+                            <div id="pE20"></div>
+
+                            <div id="pF1"></div>
+                            <div id="pF2"></div>
+                            <div id="pF3"></div>
+                            <div id="pF4"></div>
+                            <div id="pF5"></div>
+                            <div id="pF6"></div>
+                            <div id="pF7"></div>
+                            <div id="pF8"></div>
+                            <div id="pF9"></div>
+                            <div id="pF10"></div>
+                            <div id="pF11"></div>
+                            <div id="pF12"></div>
+                            <div id="pF13"></div>
+                            <div id="pF14"></div>
+                            <div id="pF15"></div>
+                            <div id="pF16"></div>
+                            <div id="pF17"></div>
+                            <div id="pF18"></div>
+                            <div id="pF19"></div>
+                            <div id="pF20"></div>
+
+                            <div id="pG1"></div>
+                            <div id="pG2"></div>
+                            <div id="pG3"></div>
+                            <div id="pG4"></div>
+                            <div id="pG5"></div>
+                            <div id="pG6"></div>
+                            <div id="pG7"></div>
+                            <div id="pG8"></div>
+                            <div id="pG9"></div>
+                            <div id="pG10"></div>
+                            <div id="pG11"></div>
+                            <div id="pG12"></div>
+                            <div id="pG13"></div>
+                            <div id="pG14"></div>
+                            <div id="pG15"></div>
+                            <div id="pG16"></div>
+                            <div id="pG17"></div>
+                            <div id="pG18"></div>
+                            <div id="pG19"></div>
+                            <div id="pG20"></div>
+
+                            <div id="pH1"></div>
+                            <div id="pH2"></div>
+                            <div id="pH3"></div>
+                            <div id="pH4"></div>
+                            <div id="pH5"></div>
+                            <div id="pH6"></div>
+                            <div id="pH7"></div>
+                            <div id="pH8"></div>
+                            <div id="pH9"></div>
+                            <div id="pH10"></div>
+                            <div id="pH11"></div>
+                            <div id="pH12"></div>
+                            <div id="pH13"></div>
+                            <div id="pH14"></div>
+                            <div id="pH15"></div>
+                            <div id="pH16"></div>
+                            <div id="pH17"></div>
+                            <div id="pH18"></div>
+                            <div id="pH19"></div>
+                            <div id="pH20"></div>
+
+                            <div id="pI1"></div>
+                            <div id="pI2"></div>
+                            <div id="pI3"></div>
+                            <div id="pI4"></div>
+                            <div id="pI5"></div>
+                            <div id="pI6"></div>
+                            <div id="pI7"></div>
+                            <div id="pI8"></div>
+                            <div id="pI9"></div>
+                            <div id="pI10"></div>
+                            <div id="pI11"></div>
+                            <div id="pI12"></div>
+                            <div id="pI13"></div>
+                            <div id="pI14"></div>
+                            <div id="pI15"></div>
+                            <div id="pI16"></div>
+                            <div id="pI17"></div>
+                            <div id="pI18"></div>
+                            <div id="pI19"></div>
+                            <div id="pI20"></div>
+
+                            <div id="pJ1"></div>
+                            <div id="pJ2"></div>
+                            <div id="pJ3"></div>
+                            <div id="pJ4"></div>
+                            <div id="pJ5"></div>
+                            <div id="pJ6"></div>
+                            <div id="pJ7"></div>
+                            <div id="pJ8"></div>
+                            <div id="pJ9"></div>
+                            <div id="pJ10"></div>
+                            <div id="pJ11"></div>
+                            <div id="pJ12"></div>
+                            <div id="pJ13"></div>
+                            <div id="pJ14"></div>
+                            <div id="pJ15"></div>
+                            <div id="pJ16"></div>
+                            <div id="pJ17"></div>
+                            <div id="pJ18"></div>
+                            <div id="pJ19"></div>
+                            <div id="pJ20"></div>
+                        </div>
+                    </div>
+                    <div class="opponentContainer">
+                        <h2 class="opponentGameHeader">Strike Command Center                       
+                        </h2>
+                        <div class="opponentGameScreen">
+                            <!-- spots, labeled o(opponent), letter(vert), numeral(horiz) -->
+                            <div id="oA1"></div>
+                            <div id="oA2"></div>
+                            <div id="oA3"></div>
+                            <div id="oA4"></div>
+                            <div id="oA5"></div>
+                            <div id="oA6"></div>
+                            <div id="oA7"></div>
+                            <div id="oA8"></div>
+                            <div id="oA9"></div>
+                            <div id="oA10"></div>
+                            <div id="oA11"></div>
+                            <div id="oA12"></div>
+                            <div id="oA13"></div>
+                            <div id="oA14"></div>
+                            <div id="oA15"></div>
+                            <div id="oA16"></div>
+                            <div id="oA17"></div>
+                            <div id="oA18"></div>
+                            <div id="oA19"></div>
+                            <div id="oA20"></div>
+
+                            <div id="oB1"></div>
+                            <div id="oB2"></div>
+                            <div id="oB3"></div>
+                            <div id="oB4"></div>
+                            <div id="oB5"></div>
+                            <div id="oB6"></div>
+                            <div id="oB7"></div>
+                            <div id="oB8"></div>
+                            <div id="oB9"></div>
+                            <div id="oB10"></div>
+                            <div id="oB11"></div>
+                            <div id="oB12"></div>
+                            <div id="oB13"></div>
+                            <div id="oB14"></div>
+                            <div id="oB15"></div>
+                            <div id="oB16"></div>
+                            <div id="oB17"></div>
+                            <div id="oB18"></div>
+                            <div id="oB19"></div>
+                            <div id="oB20"></div>
+
+                            <div id="oC1"></div>
+                            <div id="oC2"></div>
+                            <div id="oC3"></div>
+                            <div id="oC4"></div>
+                            <div id="oC5"></div>
+                            <div id="oC6"></div>
+                            <div id="oC7"></div>
+                            <div id="oC8"></div>
+                            <div id="oC9"></div>
+                            <div id="oC10"></div>
+                            <div id="oC11"></div>
+                            <div id="oC12"></div>
+                            <div id="oC13"></div>
+                            <div id="oC14"></div>
+                            <div id="oC15"></div>
+                            <div id="oC16"></div>
+                            <div id="oC17"></div>
+                            <div id="oC18"></div>
+                            <div id="oC19"></div>
+                            <div id="oC20"></div>
+
+                            <div id="oD1"></div>
+                            <div id="oD2"></div>
+                            <div id="oD3"></div>
+                            <div id="oD4"></div>
+                            <div id="oD5"></div>
+                            <div id="oD6"></div>
+                            <div id="oD7"></div>
+                            <div id="oD8"></div>
+                            <div id="oD9"></div>
+                            <div id="oD10"></div>
+                            <div id="oD11"></div>
+                            <div id="oD12"></div>
+                            <div id="oD13"></div>
+                            <div id="oD14"></div>
+                            <div id="oD15"></div>
+                            <div id="oD16"></div>
+                            <div id="oD17"></div>
+                            <div id="oD18"></div>
+                            <div id="oD19"></div>
+                            <div id="oD20"></div>
+
+                            <div id="oE1"></div>
+                            <div id="oE2"></div>
+                            <div id="oE3"></div>
+                            <div id="oE4"></div>
+                            <div id="oE5"></div>
+                            <div id="oE6"></div>
+                            <div id="oE7"></div>
+                            <div id="oE8"></div>
+                            <div id="oE9"></div>
+                            <div id="oE10"></div>
+                            <div id="oE11"></div>
+                            <div id="oE12"></div>
+                            <div id="oE13"></div>
+                            <div id="oE14"></div>
+                            <div id="oE15"></div>
+                            <div id="oE16"></div>
+                            <div id="oE17"></div>
+                            <div id="oE18"></div>
+                            <div id="oE19"></div>
+                            <div id="oE20"></div>
+
+                            <div id="oF1"></div>
+                            <div id="oF2"></div>
+                            <div id="oF3"></div>
+                            <div id="oF4"></div>
+                            <div id="oF5"></div>
+                            <div id="oF6"></div>
+                            <div id="oF7"></div>
+                            <div id="oF8"></div>
+                            <div id="oF9"></div>
+                            <div id="oF10"></div>
+                            <div id="oF11"></div>
+                            <div id="oF12"></div>
+                            <div id="oF13"></div>
+                            <div id="oF14"></div>
+                            <div id="oF15"></div>
+                            <div id="oF16"></div>
+                            <div id="oF17"></div>
+                            <div id="oF18"></div>
+                            <div id="oF19"></div>
+                            <div id="oF20"></div>
+
+                            <div id="oG1"></div>
+                            <div id="oG2"></div>
+                            <div id="oG3"></div>
+                            <div id="oG4"></div>
+                            <div id="oG5"></div>
+                            <div id="oG6"></div>
+                            <div id="oG7"></div>
+                            <div id="oG8"></div>
+                            <div id="oG9"></div>
+                            <div id="oG10"></div>
+                            <div id="oG11"></div>
+                            <div id="oG12"></div>
+                            <div id="oG13"></div>
+                            <div id="oG14"></div>
+                            <div id="oG15"></div>
+                            <div id="oG16"></div>
+                            <div id="oG17"></div>
+                            <div id="oG18"></div>
+                            <div id="oG19"></div>
+                            <div id="oG20"></div>
+
+                            <div id="oH1"></div>
+                            <div id="oH2"></div>
+                            <div id="oH3"></div>
+                            <div id="oH4"></div>
+                            <div id="oH5"></div>
+                            <div id="oH6"></div>
+                            <div id="oH7"></div>
+                            <div id="oH8"></div>
+                            <div id="oH9"></div>
+                            <div id="oH10"></div>
+                            <div id="oH11"></div>
+                            <div id="oH12"></div>
+                            <div id="oH13"></div>
+                            <div id="oH14"></div>
+                            <div id="oH15"></div>
+                            <div id="oH16"></div>
+                            <div id="oH17"></div>
+                            <div id="oH18"></div>
+                            <div id="oH19"></div>
+                            <div id="oH20"></div>
+
+                            <div id="oI1"></div>
+                            <div id="oI2"></div>
+                            <div id="oI3"></div>
+                            <div id="oI4"></div>
+                            <div id="oI5"></div>
+                            <div id="oI6"></div>
+                            <div id="oI7"></div>
+                            <div id="oI8"></div>
+                            <div id="oI9"></div>
+                            <div id="oI10"></div>
+                            <div id="oI11"></div>
+                            <div id="oI12"></div>
+                            <div id="oI13"></div>
+                            <div id="oI14"></div>
+                            <div id="oI15"></div>
+                            <div id="oI16"></div>
+                            <div id="oI17"></div>
+                            <div id="oI18"></div>
+                            <div id="oI19"></div>
+                            <div id="oI20"></div>
+                        
+                            <div id="oJ1"></div>
+                            <div id="oJ2"></div>
+                            <div id="oJ3"></div>
+                            <div id="oJ4"></div>
+                            <div id="oJ5"></div>
+                            <div id="oJ6"></div>
+                            <div id="oJ7"></div>
+                            <div id="oJ8"></div>
+                            <div id="oJ9"></div>
+                            <div id="oJ10"></div>
+                            <div id="oJ11"></div>
+                            <div id="oJ12"></div>
+                            <div id="oJ13"></div>
+                            <div id="oJ14"></div>
+                            <div id="oJ15"></div>
+                            <div id="oJ16"></div>
+                            <div id="oJ17"></div>
+                            <div id="oJ18"></div>
+                            <div id="oJ19"></div>
+                            <div id="oJ20"></div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="rightDisp">
+                    <div class="topRightDisp"> Top Right
+                    </div>
+                    <div class="midRightDisp"> Mid Right
+                    </div>
+                    <div class="bottomRightDisp"> Bottom Right
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

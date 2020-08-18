@@ -1,0 +1,1431 @@
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.startContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "instructioncontainer instructioncontainer startwrapper startwrapper"
+    "instructioncontainer instructioncontainer  startwrapper startwrapper"
+    ;
+}
+
+.startWrapper {
+    grid-area: startwrapper;
+}
+
+.instructionContainer{
+    grid-area: instrcontainer;
+}
+
+.mainContainer {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.menuHeader {
+    min-height: 20px;
+    max-height: 10vh;
+    max-width: 100vh;
+    text-align: center;
+}
+
+.gameContainer {
+    max-height: 95vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ldisp gamedisplay gamedisplay gamedisplay rdisp"
+    "ldisp gamedisplay gamedisplay gamedisplay rdisp"
+    "ldisp gamedisplay gamedisplay gamedisplay rdisp"
+    "ldisp gamedisplay gamedisplay gamedisplay rdisp"
+    "ldisp gamedisplay gamedisplay gamedisplay rdisp"
+}
+
+.leftDisp {
+    max-width: 10vh;
+    min-width: 20px;
+    max-height: 90vh;
+    display: grid;
+    grid-area: ldisp;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "ldisp"
+    "ldisp"
+    "ldisp"
+
+}
+
+.rightDisp {
+    max-width: 10vh;
+    min-width: 20px;
+    max-height: 90vh;
+    display: grid;
+    grid-area: rdisp;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "rdisp"
+    "rdisp"
+    "rdisp"
+}
+
+.gameDisp {
+    max-height: 90vh;
+    max-width: 80vw;
+    display: grid;
+    grid-area: gamedisplay;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "playercontainer"
+    "opponentcontainer"
+}
+
+.playerContainer {
+    max-height: 45vh;
+    max-width: 80vw;
+    display: grid;
+    grid-area: playercontainer;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "playergameheader"
+    "playergamescreen"
+}
+
+.opponentContainer {
+    max-height: 45vh;
+    max-width: 80vw;
+    display: grid;
+    grid-area: opponentcontainer;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "opponentgameheader"
+    "opponentgamescreen"
+}
+
+.playerGameHeader {
+    max-height: 5vh;
+    text-align: center;
+    grid-area: playergameheader
+    
+}
+
+.opponentGameHeader {
+    max-height: 5vh;
+    text-align: center;
+    grid-area: opponentgameheader
+}
+
+.playerGameScreen {
+    max-height: 40vh;
+    max-width: 80vw;
+    border: 5px;
+    display: grid;
+    background-color: cornflowerblue;
+    grid-area: playergamescreen;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-areas: 
+    "pa1 pa2 pa3 pa4 pa5 pa6 pa7 pa8 pa9 pa10 pa11 pa12 pa13 pa14 pa15 pa16 pa17 pa18 pa19 pa20"
+    "pb1 pb2 pb3 pb4 pb5 pb6 pb7 pb8 pb9 pb10 pb11 pb12 pb13 pb14 pb15 pb16 pb17 pb18 pb19 pb20"
+    "pc1 pc2 pc3 pc4 pc5 pc6 pc7 pc8 pc9 pc10 pc11 pc12 pc13 pc14 pc15 pc16 pc17 pc18 pc19 pc20"
+    "pd1 pd2 pd3 pd4 pd5 pd6 pd7 pd8 pd9 pd10 pd11 pd12 pd13 pd14 pd15 pd16 pd17 pd18 pd19 pd20"
+    "pe1 pe2 pe3 pe4 pe5 pe6 pe7 pe8 pe9 pe10 pe11 pe12 pe13 pe14 pe15 pe16 pe17 pe18 pe19 pe20"
+    "pf1 pf2 pf3 pf4 pf5 pf6 pf7 pf8 pf9 pf10 pf11 pf12 pf13 pf14 pf15 pf16 pf17 pf18 pf19 pf20"
+    "pg1 pg2 pg3 pg4 pg5 pg6 pg7 pg8 pg9 pg10 pg11 pg12 pg13 pg14 pg15 pg16 pg17 pg18 pg19 pg20"
+    "ph1 ph2 ph3 ph4 ph5 ph6 ph7 ph8 ph9 ph10 ph11 ph12 ph13 ph14 ph15 ph16 ph17 ph18 ph19 ph20"
+    "pi1 pi2 pi3 pi4 pi5 pi6 pi7 pi8 pi9 pi10 pi11 pi12 pi13 pi14 pi15 pi16 pi17 pi18 pi19 pi20"
+    "pj1 pj2 pj3 pj4 pj5 pj6 pj7 pj8 pj9 pj10 pj11 pj12 pj13 pj14 pj15 pj16 pj17 pj18 pj19 pj20"
+    ;
+}
+
+.opponentGameScreen {
+    max-height: 40vh;
+    max-width: 80vw;
+    display: grid;
+    background-color: cornflowerblue;
+    grid-area: opponentgamescreen;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-areas: 
+    "oa1 oa2 oa3 oa4 oa5 oa6 oa7 oa8 oa9 oa10 oa11 oa12 oa13 oa14 oa15 oa16 oa17 oa18 oa19 oa20"
+    "ob1 ob2 ob3 ob4 ob5 ob6 ob7 ob8 ob9 ob10 ob11 ob12 ob13 ob14 ob15 ob16 ob17 ob18 ob19 ob20"
+    "oc1 oc2 oc3 oc4 oc5 oc6 oc7 oc8 oc9 oc10 oc11 oc12 oc13 oc14 oc15 oc16 oc17 oc18 oc19 oc20"
+    "od1 od2 od3 od4 od5 od6 od7 od8 od9 od10 od11 od12 od13 od14 od15 od16 od17 od18 od19 od20"
+    "oe1 oe2 oe3 oe4 oe5 oe6 oe7 oe8 oe9 oe10 oe11 oe12 oe13 oe14 oe15 oe16 oe17 oe18 oe19 oe20"
+    "of1 of2 of3 of4 of5 of6 of7 of8 of9 of10 of11 of12 of13 of14 of15 of16 of17 of18 of19 of20"
+    "og1 og2 og3 og4 og5 og6 og7 og8 og9 og10 og11 og12 og13 og14 og15 og16 og17 og18 og19 og20"
+    "oh1 oh2 oh3 oh4 oh5 oh6 oh7 oh8 oh9 oh10 oh11 oh12 oh13 oh14 oh15 oh16 oh17 oh18 oh19 oh20"
+    "oi1 oi2 oi3 oi4 oi5 oi6 oi7 oi8 oi9 oi10 oi11 oi12 oi13 oi14 oi15 oi16 oi17 oi18 oi19 oi20"
+    "oj1 oj2 oj3 oj4 oj5 oj6 oj7 oj8 oj9 oj10 oj11 oj12 oj13 oj14 oj15 oj16 oj17 oj18 oj19 oj20"
+    ;
+}
+
+#pA1, #pA2, #pA3, #pA4, #pA5, #pA6, #pA7, #pA8, #pA9, #pA10, #pA11, #pA12, #pA13, #pA14, #pA15, #pA16, #pA17, #pA18, #pA19, #pA20,
+#pB1, #pB2, #pB3, #pB4, #pB5, #pB6, #pB7, #pB8, #pB9, #pB10, #pB11, #pB12, #pB13, #pB14, #pB15, #pB16, #pB17, #pB18, #pB19, #pB20,
+#pC1, #pC2, #pC3, #pC4, #pC5, #pC6, #pC7, #pC8, #pC9, #pC10, #pC11, #pC12, #pC13, #pC14, #pC15, #pC16, #pC17, #pC18, #pC19, #pC20,
+#pD1, #pD2, #pD3, #pD4, #pD5, #pD6, #pD7, #pD8, #pD9, #pD10, #pD11, #pD12, #pD13, #pD14, #pD15, #pD16, #pD17, #pD18, #pD19, #pD20,
+#pE1, #pE2, #pE3, #pE4, #pE5, #pE6, #pE7, #pE8, #pE9, #pE10, #pE11, #pE12, #pE13, #pE14, #pE15, #pE16, #pE17, #pE18, #pE19, #pE20,
+#pF1, #pF2, #pF3, #pF4, #pF5, #pF6, #pF7, #pF8, #pF9, #pF10, #pF11, #pF12, #pF13, #pF14, #pF15, #pF16, #pF17, #pF18, #pF19, #pF20,
+#pG1, #pG2, #pG3, #pG4, #pG5, #pG6, #pG7, #pG8, #pG9, #pG10, #pG11, #pG12, #pG13, #pG14, #pG15, #pG16, #pG17, #pG18, #pG19, #pG20,
+#pH1, #pH2, #pH3, #pH4, #pH5, #pH6, #pH7, #pH8, #pH9, #pH10, #pH11, #pH12, #pH13, #pH14, #pH15, #pH16, #pH17, #pH18, #pH19, #pH20,
+#pI1, #pI2, #pI3, #pI4, #pI5, #pI6, #pI7, #pI8, #pI9, #pI10, #pI11, #pI12, #pI13, #pI14, #pI15, #pI16, #pI17, #pI18, #pI19, #pI20,
+#pJ1, #pJ2, #pJ3, #pJ4, #pJ5, #pJ6, #pJ7, #pJ8, #pJ9, #pJ10, #pJ11, #pJ12, #pJ13, #pJ14, #pJ15, #pJ16, #pJ17, #pJ18, #pJ19, #pJ20 {
+    max-height: 4vh;
+    max-width: 8vw;
+    border-style: double;
+    margin: 1px;
+    background: darkgray;
+}
+
+#oA1, #oA2, #oA3, #oA4, #oA5, #oA6, #oA7, #oA8, #oA9, #oA10, #oA11, #oA12, #oA13, #oA14, #oA15, #oA16, #oA17, #oA18, #oA19, #oA20,
+#oB1, #oB2, #oB3, #oB4, #oB5, #oB6, #oB7, #oB8, #oB9, #oB10, #oB11, #oB12, #oB13, #oB14, #oB15, #oB16, #oB17, #oB18, #oB19, #oB20,
+#oC1, #oC2, #oC3, #oC4, #oC5, #oC6, #oC7, #oC8, #oC9, #oC10, #oC11, #oC12, #oC13, #oC14, #oC15, #oC16, #oC17, #oC18, #oC19, #oC20,
+#oD1, #oD2, #oD3, #oD4, #oD5, #oD6, #oD7, #oD8, #oD9, #oD10, #oD11, #oD12, #oD13, #oD14, #oD15, #oD16, #oD17, #oD18, #oD19, #oD20,
+#oE1, #oE2, #oE3, #oE4, #oE5, #oE6, #oE7, #oE8, #oE9, #oE10, #oE11, #oE12, #oE13, #oE14, #oE15, #oE16, #oE17, #oE18, #oE19, #oE20,
+#oF1, #oF2, #oF3, #oF4, #oF5, #oF6, #oF7, #oF8, #oF9, #oF10, #oF11, #oF12, #oF13, #oF14, #oF15, #oF16, #oF17, #oF18, #oF19, #oF20,
+#oG1, #oG2, #oG3, #oG4, #oG5, #oG6, #oG7, #oG8, #oG9, #oG10, #oG11, #oG12, #oG13, #oG14, #oG15, #oG16, #oG17, #oG18, #oG19, #oG20,
+#oH1, #oH2, #oH3, #oH4, #oH5, #oH6, #oH7, #oH8, #oH9, #oH10, #oH11, #oH12, #oH13, #oH14, #oH15, #oH16, #oH17, #oH18, #oH19, #oH20,
+#oI1, #oI2, #oI3, #oI4, #oI5, #oI6, #oI7, #oI8, #oI9, #oI10, #oI11, #oI12, #oI13, #oI14, #oI15, #oI16, #oI17, #oI18, #oI19, #oI20,
+#oJ1, #oJ2, #oJ3, #oJ4, #oJ5, #oJ6, #oJ7, #oJ8, #oJ9, #oJ10, #oJ11, #oJ12, #oJ13, #oJ14, #oJ15, #oJ16, #oJ17, #oJ18, #oJ19, #oJ20 {
+    max-height: 4vh;
+    max-width: 8vw;
+    border-style: double;
+    margin: 1px;
+    background: darkgray;
+}
+
+#pA1 {
+    grid-area: pa1;
+}
+#pA2 {
+    grid-area: pa2;
+}
+#pA3 {
+    grid-area: pa3;
+}
+#pA4 {
+    grid-area: pa4;
+}
+#pA5 {
+    grid-area: pa5;
+}
+#pA6 {
+    grid-area: pa6;
+}
+#pA7 {
+    grid-area: pa7;
+}
+#pA8 {
+    grid-area: pa8;
+}
+#pA9 {
+    grid-area: pa9;
+}
+#pA10 {
+    grid-area: pa10;
+} 
+#pA11 {
+    grid-area: pa11;
+} 
+#pA12 {
+    grid-area: pa12;
+} 
+#pA13 {
+    grid-area: pa13;
+} 
+#pA14 {
+    grid-area: pa14;
+} 
+#pA15 {
+    grid-area: pa15;
+} 
+#pA16 {
+    grid-area: pa16;
+} 
+#pA17 {
+    grid-area: pa17;
+} 
+#pA18 {
+    grid-area: pa18;
+} 
+#pA19 {
+    grid-area: pa19;
+} 
+#pA20 {
+    grid-area: pa20;
+}
+
+#pB1 {
+    grid-area: pb1;
+}
+#pB2 {
+    grid-area: pb2;
+}
+#pB3 {
+    grid-area: pb3;
+}
+#pB4 {
+    grid-area: pb4;
+}
+#pB5 {
+    grid-area: pb5;
+}
+#pB6 {
+    grid-area: pb6;
+}
+#pB7 {
+    grid-area: pb7;
+}
+#pB8 {
+    grid-area: pb8;
+}
+#pB9 {
+    grid-area: pb9;
+}
+#pB10 {
+    grid-area: pb10;
+} 
+#pB11 {
+    grid-area: pb11;
+} 
+#pB12 {
+    grid-area: pb12;
+} 
+#pB13 {
+    grid-area: pb13;
+} 
+#pB14 {
+    grid-area: pb14;
+} 
+#pB15 {
+    grid-area: pb15;
+} 
+#pB16 {
+    grid-area: pb16;
+} 
+#pB17 {
+    grid-area: pb17;
+} 
+#pB18 {
+    grid-area: pb18;
+} 
+#pB19 {
+    grid-area: pb19;
+} 
+#pB20 {
+    grid-area: pb20;
+}
+
+#pC1 {
+    grid-area: pc1;
+}
+#pC2 {
+    grid-area: pc2;
+}
+#pC3 {
+    grid-area: pc3;
+}
+#pC4 {
+    grid-area: pc4;
+}
+#pC5 {
+    grid-area: pc5;
+}
+#pC6 {
+    grid-area: pc6;
+}
+#pC7 {
+    grid-area: pc7;
+}
+#pC8 {
+    grid-area: pc8;
+}
+#pC9 {
+    grid-area: pc9;
+}
+#pC10 {
+    grid-area: pc10;
+} 
+#pC11 {
+    grid-area: pc11;
+} 
+#pC12 {
+    grid-area: pc12;
+} 
+#pC13 {
+    grid-area: pc13;
+} 
+#pC14 {
+    grid-area: pc14;
+} 
+#pC15 {
+    grid-area: pc15;
+} 
+#pC16 {
+    grid-area: pc16;
+} 
+#pC17 {
+    grid-area: pc17;
+} 
+#pC18 {
+    grid-area: pc18;
+} 
+#pC19 {
+    grid-area: pc19;
+} 
+#pC20 {
+    grid-area: pc20;
+}
+
+#pD1 {
+    grid-area: pd1
+};
+#pD2 {
+    grid-area: pd2
+};
+#pD3 {
+    grid-area: pd3
+};
+#pD4 {
+    grid-area: pd4
+};
+#pD5 {
+    grid-area: pd5
+};
+#pD6 {
+    grid-area: pd6
+};
+#pD7 {
+    grid-area: pd7
+};
+#pD8 {
+    grid-area: pd8
+};
+#pD9 {
+    grid-area: pd9
+};
+#pD10 {
+    grid-area: pd10;
+} 
+#pD11 {
+    grid-area: pd11;
+} 
+#pD12 {
+    grid-area: pd12;
+} 
+#pD13 {
+    grid-area: pd13;
+} 
+#pD14 {
+    grid-area: pd14;
+} 
+#pD15 {
+    grid-area: pd15;
+} 
+#pD16 {
+    grid-area: pd16;
+} 
+#pD17 {
+    grid-area: pd17;
+} 
+#pD18 {
+    grid-area: pd18;
+} 
+#pD19 {
+    grid-area: pd19;
+} 
+#pD20 {
+    grid-area: pd20;
+}
+
+#pE1 {
+    grid-area: pe1;
+}
+#pE2 {
+    grid-area: pe2;
+}
+#pE3 {
+    grid-area: pe3;
+}
+#pE4 {
+    grid-area: pe4;
+}
+#pE5 {
+    grid-area: pe5;
+}
+#pE6 {
+    grid-area: pe6;
+}
+#pE7 {
+    grid-area: pe7;
+}
+#pE8 {
+    grid-area: pe8;
+}
+#pE9 {
+    grid-area: pe9;
+}
+#pE10 {
+    grid-area: pe10;
+} 
+#pE11 {
+    grid-area: pe11;
+} 
+#pE12 {
+    grid-area: pe12;
+} 
+#pE13 {
+    grid-area: pe13;
+} 
+#pE14 {
+    grid-area: pe14;
+} 
+#pE15 {
+    grid-area: pe15;
+} 
+#pE16 {
+    grid-area: pe16;
+} 
+#pE17 {
+    grid-area: pe17;
+} 
+#pE18 {
+    grid-area: pe18;
+} 
+#pE19 {
+    grid-area: pe19;
+} 
+#pE20 {
+    grid-area: pe20;
+}
+
+#pF1 {
+    grid-area: pf1;
+}
+#pF2 {
+    grid-area: pf2;
+}
+#pF3 {
+    grid-area: pf3;
+}
+#pF4 {
+    grid-area: pf4;
+}
+#pF5 {
+    grid-area: pf5;
+}
+#pF6 {
+    grid-area: pf6;
+}
+#pF7 {
+    grid-area: pf7;
+}
+#pF8 {
+    grid-area: pf8;
+}
+#pF9 {
+    grid-area: pf9;
+}
+#pF10 {
+    grid-area: pf10;
+} 
+#pF11 {
+    grid-area: pf11;
+} 
+#pF12 {
+    grid-area: pf12;
+} 
+#pF13 {
+    grid-area: pf13;
+} 
+#pF14 {
+    grid-area: pf14;
+} 
+#pF15 {
+    grid-area: pf15;
+} 
+#pF16 {
+    grid-area: pf16;
+} 
+#pF17 {
+    grid-area: pf17;
+} 
+#pF18 {
+    grid-area: pf18;
+} 
+#pF19 {
+    grid-area: pf19;
+} 
+#pF20 {
+    grid-area: pf20;
+}
+
+#pG1 {
+    grid-area: pg1;
+}
+#pG2 {
+    grid-area: pg2;
+}
+#pG3 {
+    grid-area: pg3;
+}
+#pG4 {
+    grid-area: pg4;
+}
+#pG5 {
+    grid-area: pg5;
+}
+#pG6 {
+    grid-area: pg6;
+}
+#pG7 {
+    grid-area: pg7;
+}
+#pG8 {
+    grid-area: pg8;
+}
+#pG9 {
+    grid-area: pg9;
+}
+#pG10 {
+    grid-area: pg10;
+} 
+#pG11 {
+    grid-area: pg11;
+} 
+#pG12 {
+    grid-area: pg12;
+} 
+#pG13 {
+    grid-area: pg13;
+} 
+#pG14 {
+    grid-area: pg14;
+} 
+#pG15 {
+    grid-area: pg15;
+} 
+#pG16 {
+    grid-area: pg16;
+} 
+#pG17 {
+    grid-area: pg17;
+} 
+#pG18 {
+    grid-area: pg18;
+} 
+#pG19 {
+    grid-area: pg19;
+} 
+#pG20 {
+    grid-area: pg20;
+}
+
+#pH1 {
+    grid-area: ph1;
+}
+#pH2 {
+    grid-area: ph2;
+}
+#pH3 {
+    grid-area: ph3;
+}
+#pH4 {
+    grid-area: ph4;
+}
+#pH5 {
+    grid-area: ph5;
+}
+#pH6 {
+    grid-area: ph6;
+}
+#pH7 {
+    grid-area: ph7;
+}
+#pH8 {
+    grid-area: ph8;
+}
+#pH9 {
+    grid-area: ph9;
+}
+#pH10 {
+    grid-area: ph10;
+} 
+#pH11 {
+    grid-area: ph11;
+} 
+#pH12 {
+    grid-area: ph12;
+} 
+#pH13 {
+    grid-area: ph13;
+} 
+#pH14 {
+    grid-area: ph14;
+} 
+#pH15 {
+    grid-area: ph15;
+} 
+#pH16 {
+    grid-area: ph16;
+} 
+#pH17 {
+    grid-area: ph17;
+} 
+#pH18 {
+    grid-area: ph18;
+} 
+#pH19 {
+    grid-area: ph19;
+} 
+#pH20 {
+    grid-area: ph20;
+}
+
+#pI1 {
+    grid-area: pi1;
+}
+#pI2 {
+    grid-area: pi2;
+}
+#pI3 {
+    grid-area: pi3;
+}
+#pI4 {
+    grid-area: pi4;
+}
+#pI5 {
+    grid-area: pi5;
+}
+#pI6 {
+    grid-area: pi6;
+}
+#pI7 {
+    grid-area: pi7;
+}
+#pI8 {
+    grid-area: pi8;
+}
+#pI9 {
+    grid-area: pi9;
+}
+#pI10 {
+    grid-area: pi10;
+} 
+#pI11 {
+    grid-area: pi11;
+} 
+#pI12 {
+    grid-area: pi12;
+} 
+#pI13 {
+    grid-area: pi13;
+} 
+#pI14 {
+    grid-area: pi14;
+} 
+#pI15 {
+    grid-area: pi15;
+} 
+#pI16 {
+    grid-area: pi16;
+} 
+#pI17 {
+    grid-area: pi17;
+} 
+#pI18 {
+    grid-area: pi18;
+} 
+#pI19 {
+    grid-area: pi19;
+} 
+#pI20 {
+    grid-area: pi20;
+}
+
+#pJ1 {
+    grid-area: pj1;
+}
+#pJ2 {
+    grid-area: pj2;
+}
+#pJ3 {
+    grid-area: pj3;
+}
+#pJ4 {
+    grid-area: pj4;
+}
+#pJ5 {
+    grid-area: pj5;
+}
+#pJ6 {
+    grid-area: pj6;
+}
+#pJ7 {
+    grid-area: pj7;
+}
+#pJ8 {
+    grid-area: pj8;
+}
+#pJ9 {
+    grid-area: pj9;
+}
+#pJ10 {
+    grid-area: pj10;
+} 
+#pJ11 {
+    grid-area: pj11;
+} 
+#pJ12 {
+    grid-area: pj12;
+} 
+#pJ13 {
+    grid-area: pj13;
+} 
+#pJ14 {
+    grid-area: pj14;
+} 
+#pJ15 {
+    grid-area: pj15;
+} 
+#pJ16 {
+    grid-area: pj16;
+} 
+#pJ17 {
+    grid-area: pj17;
+} 
+#pJ18 {
+    grid-area: pj18;
+} 
+#pJ19 {
+    grid-area: pj19;
+} 
+#pJ20 {
+    grid-area: pj20;
+}
+
+
+#oA1 {
+    grid-area: oa1;
+}
+#oA2 {
+    grid-area: oa2;
+}
+#oA3 {
+    grid-area: oa3;
+}
+#oA4 {
+    grid-area: oa4;
+}
+#oA5 {
+    grid-area: oa5;
+}
+#oA6 {
+    grid-area: oa6;
+}
+#oA7 {
+    grid-area: oa7;
+}
+#oA8 {
+    grid-area: oa8;
+}
+#oA9 {
+    grid-area: oa9;
+}
+#oA10 {
+    grid-area: oa10;
+} 
+#oA11 {
+    grid-area: oa11;
+} 
+#oA12 {
+    grid-area: oa12;
+} 
+#oA13 {
+    grid-area: oa13;
+} 
+#oA14 {
+    grid-area: oa14;
+} 
+#oA15 {
+    grid-area: oa15;
+} 
+#oA16 {
+    grid-area: oa16;
+} 
+#oA17 {
+    grid-area: oa17;
+} 
+#oA18 {
+    grid-area: oa18;
+} 
+#oA19 {
+    grid-area: oa19;
+} 
+#oA20 {
+    grid-area: oa20;
+}
+
+#oB1 {
+    grid-area: ob1;
+}
+#oB2 {
+    grid-area: ob2;
+}
+#oB3 {
+    grid-area: ob3;
+}
+#oB4 {
+    grid-area: ob4;
+}
+#oB5 {
+    grid-area: ob5;
+}
+#oB6 {
+    grid-area: ob6;
+}
+#oB7 {
+    grid-area: ob7;
+}
+#oB8 {
+    grid-area: ob8;
+}
+#oB9 {
+    grid-area: ob9;
+}
+#oB10 {
+    grid-area: ob10;
+} 
+#oB11 {
+    grid-area: ob11;
+} 
+#oB12 {
+    grid-area: ob12;
+} 
+#oB13 {
+    grid-area: ob13;
+} 
+#oB14 {
+    grid-area: ob14;
+} 
+#oB15 {
+    grid-area: ob15;
+} 
+#oB16 {
+    grid-area: ob16;
+} 
+#oB17 {
+    grid-area: ob17;
+} 
+#oB18 {
+    grid-area: ob18;
+} 
+#oB19 {
+    grid-area: ob19;
+} 
+#oB20 {
+    grid-area: ob20;
+}
+
+#oC1 {
+    grid-area: oc1;
+}
+#oC2 {
+    grid-area: oc2;
+}
+#oC3 {
+    grid-area: oc3;
+}
+#oC4 {
+    grid-area: oc4;
+}
+#oC5 {
+    grid-area: oc5;
+}
+#oC6 {
+    grid-area: oc6;
+}
+#oC7 {
+    grid-area: oc7;
+}
+#oC8 {
+    grid-area: oc8;
+}
+#oC9 {
+    grid-area: oc9;
+}
+#oC10 {
+    grid-area: oc10;
+} 
+#oC11 {
+    grid-area: oc11;
+} 
+#oC12 {
+    grid-area: oc12;
+} 
+#oC13 {
+    grid-area: oc13;
+} 
+#oC14 {
+    grid-area: oc14;
+} 
+#oC15 {
+    grid-area: oc15;
+} 
+#oC16 {
+    grid-area: oc16;
+} 
+#oC17 {
+    grid-area: oc17;
+} 
+#oC18 {
+    grid-area: oc18;
+} 
+#oC19 {
+    grid-area: oc19;
+} 
+#oC20 {
+    grid-area: oc20;
+}
+
+#oD1 {
+    grid-area: od1
+};
+#oD2 {
+    grid-area: od2
+};
+#oD3 {
+    grid-area: od3
+};
+#oD4 {
+    grid-area: od4
+};
+#oD5 {
+    grid-area: od5
+};
+#oD6 {
+    grid-area: od6
+};
+#oD7 {
+    grid-area: od7
+};
+#oD8 {
+    grid-area: od8
+};
+#oD9 {
+    grid-area: od9
+};
+#oD10 {
+    grid-area: od10;
+} 
+#oD11 {
+    grid-area: od11;
+} 
+#oD12 {
+    grid-area: od12;
+} 
+#oD13 {
+    grid-area: od13;
+} 
+#oD14 {
+    grid-area: od14;
+} 
+#oD15 {
+    grid-area: od15;
+} 
+#oD16 {
+    grid-area: od16;
+} 
+#oD17 {
+    grid-area: od17;
+} 
+#oD18 {
+    grid-area: od18;
+} 
+#oD19 {
+    grid-area: od19;
+} 
+#oD20 {
+    grid-area: od20;
+}
+
+#oE1 {
+    grid-area: oe1;
+}
+#oE2 {
+    grid-area: oe2;
+}
+#oE3 {
+    grid-area: oe3;
+}
+#oE4 {
+    grid-area: oe4;
+}
+#oE5 {
+    grid-area: oe5;
+}
+#oE6 {
+    grid-area: oe6;
+}
+#oE7 {
+    grid-area: oe7;
+}
+#oE8 {
+    grid-area: oe8;
+}
+#oE9 {
+    grid-area: oe9;
+}
+#oE10 {
+    grid-area: oe10;
+} 
+#oE11 {
+    grid-area: oe11;
+} 
+#oE12 {
+    grid-area: oe12;
+} 
+#oE13 {
+    grid-area: oe13;
+} 
+#oE14 {
+    grid-area: oe14;
+} 
+#oE15 {
+    grid-area: oe15;
+} 
+#oE16 {
+    grid-area: oe16;
+} 
+#oE17 {
+    grid-area: oe17;
+} 
+#oE18 {
+    grid-area: oe18;
+} 
+#oE19 {
+    grid-area: oe19;
+} 
+#oE20 {
+    grid-area: oe20;
+}
+
+#oF1 {
+    grid-area: of1;
+}
+#oF2 {
+    grid-area: of2;
+}
+#oF3 {
+    grid-area: of3;
+}
+#oF4 {
+    grid-area: of4;
+}
+#oF5 {
+    grid-area: of5;
+}
+#oF6 {
+    grid-area: of6;
+}
+#oF7 {
+    grid-area: of7;
+}
+#oF8 {
+    grid-area: of8;
+}
+#oF9 {
+    grid-area: of9;
+}
+#oF10 {
+    grid-area: of10;
+} 
+#oF11 {
+    grid-area: of11;
+} 
+#oF12 {
+    grid-area: of12;
+} 
+#oF13 {
+    grid-area: of13;
+} 
+#oF14 {
+    grid-area: of14;
+} 
+#oF15 {
+    grid-area: of15;
+} 
+#oF16 {
+    grid-area: of16;
+} 
+#oF17 {
+    grid-area: of17;
+} 
+#oF18 {
+    grid-area: of18;
+} 
+#oF19 {
+    grid-area: of19;
+} 
+#oF20 {
+    grid-area: of20;
+}
+
+#oG1 {
+    grid-area: og1;
+}
+#oG2 {
+    grid-area: og2;
+}
+#oG3 {
+    grid-area: og3;
+}
+#oG4 {
+    grid-area: og4;
+}
+#oG5 {
+    grid-area: og5;
+}
+#oG6 {
+    grid-area: og6;
+}
+#oG7 {
+    grid-area: og7;
+}
+#oG8 {
+    grid-area: og8;
+}
+#oG9 {
+    grid-area: og9;
+}
+#oG10 {
+    grid-area: og10;
+} 
+#oG11 {
+    grid-area: og11;
+} 
+#oG12 {
+    grid-area: og12;
+} 
+#oG13 {
+    grid-area: og13;
+} 
+#oG14 {
+    grid-area: og14;
+} 
+#oG15 {
+    grid-area: og15;
+} 
+#oG16 {
+    grid-area: og16;
+} 
+#oG17 {
+    grid-area: og17;
+} 
+#oG18 {
+    grid-area: og18;
+} 
+#oG19 {
+    grid-area: og19;
+} 
+#oG20 {
+    grid-area: og20;
+}
+
+#oH1 {
+    grid-area: oh1;
+}
+#oH2 {
+    grid-area: oh2;
+}
+#oH3 {
+    grid-area: oh3;
+}
+#oH4 {
+    grid-area: oh4;
+}
+#oH5 {
+    grid-area: oh5;
+}
+#oH6 {
+    grid-area: oh6;
+}
+#oH7 {
+    grid-area: oh7;
+}
+#oH8 {
+    grid-area: oh8;
+}
+#oH9 {
+    grid-area: oh9;
+}
+#oH10 {
+    grid-area: oh10;
+} 
+#oH11 {
+    grid-area: oh11;
+} 
+#oH12 {
+    grid-area: oh12;
+} 
+#oH13 {
+    grid-area: oh13;
+} 
+#oH14 {
+    grid-area: oh14;
+} 
+#oH15 {
+    grid-area: oh15;
+} 
+#oH16 {
+    grid-area: oh16;
+} 
+#oH17 {
+    grid-area: oh17;
+} 
+#oH18 {
+    grid-area: oh18;
+} 
+#oH19 {
+    grid-area: oh19;
+} 
+#oH20 {
+    grid-area: oh20;
+}
+
+#oI1 {
+    grid-area: oi1;
+}
+#oI2 {
+    grid-area: oi2;
+}
+#oI3 {
+    grid-area: oi3;
+}
+#oI4 {
+    grid-area: oi4;
+}
+#oI5 {
+    grid-area: oi5;
+}
+#oI6 {
+    grid-area: oi6;
+}
+#oI7 {
+    grid-area: oi7;
+}
+#oI8 {
+    grid-area: oi8;
+}
+#oI9 {
+    grid-area: oi9;
+}
+#oI10 {
+    grid-area: oi10;
+} 
+#oI11 {
+    grid-area: oi11;
+} 
+#oI12 {
+    grid-area: oi12;
+} 
+#oI13 {
+    grid-area: oi13;
+} 
+#oI14 {
+    grid-area: oi14;
+} 
+#oI15 {
+    grid-area: oi15;
+} 
+#oI16 {
+    grid-area: oi16;
+} 
+#oI17 {
+    grid-area: oi17;
+} 
+#oI18 {
+    grid-area: oi18;
+} 
+#oI19 {
+    grid-area: oi19;
+} 
+#oI20 {
+    grid-area: oi20;
+}
+
+#oJ1 {
+    grid-area: oj1;
+}
+#oJ2 {
+    grid-area: oj2;
+}
+#oJ3 {
+    grid-area: oj3;
+}
+#oJ4 {
+    grid-area: oj4;
+}
+#oJ5 {
+    grid-area: oj5;
+}
+#oJ6 {
+    grid-area: oj6;
+}
+#oJ7 {
+    grid-area: oj7;
+}
+#oJ8 {
+    grid-area: oj8;
+}
+#oJ9 {
+    grid-area: oj9;
+}
+#oJ10 {
+    grid-area: oj10;
+} 
+#oJ11 {
+    grid-area: oj11;
+} 
+#oJ12 {
+    grid-area: oj12;
+} 
+#oJ13 {
+    grid-area: oj13;
+} 
+#oJ14 {
+    grid-area: oj14;
+} 
+#oJ15 {
+    grid-area: oj15;
+} 
+#oJ16 {
+    grid-area: oj16;
+} 
+#oJ17 {
+    grid-area: oj17;
+} 
+#oJ18 {
+    grid-area: oj18;
+} 
+#oJ19 {
+    grid-area: oj19;
+} 
+#oJ20 {
+    grid-area: oj20;
+}
+
+
+
+
+
